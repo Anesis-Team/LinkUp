@@ -1,16 +1,9 @@
 {
   "trailingComma": "es5",                
   "semi": false,                  
-  "singleQuote": true,            
-  "quoteProps": "as-needed",     
-  "jsxSingleQuote": false,       
-  "arrowParens": "always",      
-  "bracketSpacing": true,         
-  "jsxBracketSameLine": false,   
+  "singleQuote": true,       
   "endOfLine": "auto",          
-  "htmlWhitespaceSensitivity": "css", 
-  "insertPragma": false,         
-  "requirePragma": false,         
+  "htmlWhitespaceSensitivity": "css",        
   "proseWrap": "preserve",        
   "useTabs": false,               
   "max_line_length": 100          
