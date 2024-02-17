@@ -1,0 +1,4 @@
+/* Defines footer height */
+.footer-row {
+  height: var(--footer-height);
+}
