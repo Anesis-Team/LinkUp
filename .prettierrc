@@ -1,0 +1,10 @@
+{
+  "trailingComma": "es5",                
+  "semi": false,                  
+  "singleQuote": true,       
+  "endOfLine": "auto",          
+  "htmlWhitespaceSensitivity": "css",        
+  "proseWrap": "preserve",        
+  "useTabs": false,               
+  "max_line_length": 100          
+}

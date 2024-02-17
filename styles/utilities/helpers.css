@@ -1,0 +1,25 @@
+/* Helper class to set background color to the primary custom color */
+.bg-primary-custom {
+  background-color: var(--color-primary);
+}
+
+/* Helper class to set background color to the secondary custom color */
+.bg-secondary-custom {
+  background-color: var(--color-secondary);
+}
+
+/* Helper class to set background color to a light tertiary custom color */
+.bg-tertiary-light {
+  background-color: var(--color-tertiary);
+}
+
+/* Helper class to set background color to a dark quaternary custom color */
+.bg-quaternary-dark {
+  background-color: var(--color-quaternary);
+}
+
+/* Helper class to apply an angle effect using clip-path */
+.angle-effect {
+  clip-path: var(--clip-path-angle); /* Using a custom variable for the clip path */
+  padding-top: var(--clip-path-distance-padding); /* Adding padding to maintain space after applying clip-path */
+}

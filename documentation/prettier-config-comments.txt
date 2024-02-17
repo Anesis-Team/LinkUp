@@ -1,0 +1,10 @@
+Prettier Configuration:
+
+- `trailingComma`: Use trailing commas where valid in ES5.
+- `semi`: Do not add semicolons at the end of statements.
+- `singleQuote`: Use single quotes for strings.
+- `endOfLine`: Maintain consistent line endings.
+- `htmlWhitespaceSensitivity`: Treat HTML whitespace as CSS.
+- `proseWrap`: Maintain line breaks in prose (e.g., comments).
+- `useTabs`: Use spaces instead of tabs for indentation.
+- `max_line_length`: Limit lines to 100 characters.
