@@ -20,6 +20,16 @@
 
 /* Helper class to apply an angle effect using clip-path */
 .angle-effect {
-  clip-path: var(--clip-path-angle); /* Using a custom variable for the clip path */
-  padding-top: var(--clip-path-distance-padding); /* Adding padding to maintain space after applying clip-path */
+  clip-path: var(
+    --clip-path-angle
+  ); /* Using a custom variable for the clip path */
+
+  padding-top: var(
+    --clip-path-distance-padding
+  ); /* Adding padding to maintain space after applying clip-path */
+}
+
+/* Helper class to set text color to the secondary custom color */
+.text-color-secondary {
+  color: var(--color-secondary);
 }
