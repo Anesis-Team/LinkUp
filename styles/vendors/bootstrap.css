@@ -25,7 +25,7 @@
   color: var(--color-quaternary);
 }
 
-/* home-page*/
+/* carousel*/
 
 /* Carousel component class to change "previous" arrow icon */
 .carousel-control-prev-icon {
@@ -45,13 +45,10 @@
   background-repeat: no-repeat;
 }
 
+/* card */
+
 /* Card component class to exclude the padding-x of the paragraph */
 .card-body {
   padding-left: 0;
   padding-right: 0;
-}
-
-/* Card component class to change the border of the card */
-.card {
-  border: 1px solid var(--color-quaternary);
 }
