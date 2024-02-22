@@ -10,7 +10,6 @@
   background-color: var(--color-tertiary);
   color: var(--color-primary);
   border: 2px solid var(--color-primary);
-  border-radius: 20px;
 }
 
 .btn-primary-custom:focus {
