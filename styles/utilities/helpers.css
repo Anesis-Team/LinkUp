@@ -33,9 +33,14 @@
     --clip-path-angle-bottom
   ); /* Using a custom variable for the clip path */
 
-  padding-bottom: var(
-    --clip-path-distance-padding
-  );
+  padding-bottom: var(--clip-path-distance-padding);
+}
+
+/* Helper class to apply an angle effect using clip-path */
+.angle-effect-top-bottom {
+  clip-path: var(--clip-path-angle-top-bottom);
+
+  padding-bottom: var(--clip-path-distance-padding);
 }
 
 /* Helper class to set text color to the primary custom color */
