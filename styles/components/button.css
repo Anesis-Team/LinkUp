@@ -1,0 +1,19 @@
+.btn-primary-custom {
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.btn-primary-custom:hover {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-primary-custom:focus {
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+  outline: 3px solid var(--color-quaternary);
+}

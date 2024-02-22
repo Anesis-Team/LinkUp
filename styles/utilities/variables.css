@@ -9,7 +9,8 @@
   
     /* Define a custom clip-path to create an angle effect */
     --clip-path-angle: polygon(0 0, 100% 40px, 100% 100%, 0% 100%);
-  
+    --clip-path-angle-bottom: polygon(0 0, 100% 0px, 100% 100%, 0% calc(100% - 40px));
+
     /* Define distance padding after applying clip-path */
     --clip-path-distance-padding: 40px;
   }
