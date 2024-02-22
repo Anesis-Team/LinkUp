@@ -27,6 +27,17 @@
   /* Adding padding to maintain space after applying clip-path */
 }
 
+/* Helper class to apply an angle effect using clip-path */
+.angle-effect-bottom {
+  clip-path: var(
+    --clip-path-angle-bottom
+  ); /* Using a custom variable for the clip path */
+
+  padding-bottom: var(
+    --clip-path-distance-padding
+  );
+}
+
 /* Helper class to set text color to the primary custom color */
 .text-color-primary {
   color: var(--color-primary);
