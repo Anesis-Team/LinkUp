@@ -20,13 +20,11 @@
 
 /* Helper class to apply an angle effect using clip-path */
 .angle-effect {
-  clip-path: var(
-    --clip-path-angle
-  ); /* Using a custom variable for the clip path */
+  clip-path: var(--clip-path-angle);
+  /* Using a custom variable for the clip path */
 
-  padding-top: var(
-    --clip-path-distance-padding
-  ); /* Adding padding to maintain space after applying clip-path */
+  padding-top: var(--clip-path-distance-padding);
+  /* Adding padding to maintain space after applying clip-path */
 }
 
 /* Helper class to set text color to the primary custom color */
@@ -47,4 +45,10 @@
 /* Helper class to set text color to the quaternary custom color */
 .text-color-quaternary {
   color: var(--color-quaternary);
+}
+
+/* Helper class to set width & height of the main image */
+.fluid-image {
+  width: 100%;
+  height: auto;
 }
