@@ -44,11 +44,3 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-
-/* card */
-
-/* Card component class to exclude the padding-x of the paragraph */
-.card-body {
-  padding-left: 0;
-  padding-right: 0;
-}
