@@ -19,8 +19,8 @@
 }
 
 /* Helper class to apply an angle effect using clip-path */
-.angle-effect {
-  clip-path: var(--clip-path-angle);
+.angle-effect-top {
+  clip-path: var(--clip-path-angle-top);
   /* Using a custom variable for the clip path */
 
   padding-top: var(--clip-path-distance-padding);

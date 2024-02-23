@@ -8,7 +8,7 @@
   --footer-height: 150px;
 
   /* Define a custom clip-path to create top angle effect */
-  --clip-path-angle: polygon(0 0, 100% 40px, 100% 100%, 0% 100%);
+  --clip-path-angle-top: polygon(0 0, 100% 40px, 100% 100%, 0% 100%);
 
   /* Define a custom clip-path to create bottom angle effect */
   --clip-path-angle-bottom: polygon(
