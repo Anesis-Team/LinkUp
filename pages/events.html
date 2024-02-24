@@ -40,7 +40,7 @@
 
     <!-- TODO: Add component styles -->
     <!-- Component styles -->
-    <!-- <link rel="stylesheet" href="styles/components/" /> -->
+    <link rel="stylesheet" href="/styles/components/button.css" />
 
     <!-- Layout styles -->
     <link rel="stylesheet" href="/styles/layout/header.css" />
@@ -110,14 +110,121 @@
         </div>
       </div>
     </nav>
+    <!-- Filters sections -->
+    <section class="bg-quaternary-dark text-color-tertiary py-5 angle-effect-bottom">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col text-center">
+            <h2 class="fs-1">Filters</h2>
+            <p class="fs-6">Apply filters to find the ideal event for you!</p>
+          </div>
+        </div>
+        <div class="row row-gap-2 mb-3 px-4">
+          <div class="col-12">
+            <h2 class="fs-4 text-center">Category</h2>
+          </div>
+          <!--Radio inputs -->
+          <div class="col-4">
+            <input type="radio" name="contact" id="sports" value="email">
+            <label for="sports">Sports</label>
+          </div>
+          <div class="col-4 ">
+            <input type="radio" id="theater"
+            name="contact" value="email">
+            <label for="theater">Theater</label>
+          </div>
+          <div class="col-4 ">
+            <input type="radio" id="bowling"
+            name="contact" value="email">
+            <label for="bowling">Bowling</label>
+          </div>
+          <div class="col-4 ">
+            <input type="radio" id="museums"
+            name="contact" value="email">
+            <label for="museums">Museums</label>
+          </div>
+          <div class="col-4 ">
+            <input type="radio" id="picnic"
+            name="contact" value="email">
+            <label for="picnic">Picnic</label>
+          </div>
+          <div class="col-4 ">
+            <input type="radio" id="cafe-bar"
+            name="contact" value="email">
+            <label for="cafe-bar">Cafe/Bar</label>
+          </div>
+        </div>
+
+        <!-- Text-inputs -->
+        <div class="row text-center row-gap-2 mb-3">
+          <!-- inputs -->
+          <div class="col-12 d-flex flex-column">
+            <label for="location" class="fs-4">Location</label>
+            <input class="w-75 mx-auto rounded-5 px-3 mt-2 py-1" type="text" id="location"
+            name="contact" value="Athens">
+          </div>   
+        </div>
+        <div class="row text-center row-gap-2">
+          <!-- inputs -->
+          <div class="col-12 d-flex flex-column">
+            <label for="date" class="fs-4">Date</label>
+            <input class="w-75 mx-auto rounded-5 px-3 mt-2 py-1" type="date" id="date"
+            name="contact" value="email">
+          </div>   
+          <div class="col-12 align-self-center mx-auto my-5">
+            <button class="btn btn-primary-custom px-5 py-2 fw-medium">Apply</button>
+          </div>
+          
+      
+      </div>
+    </section>
+    <section class=" pt-5 px-2">
+      <div class="container">
+        <div class="row mb-5 row-gap-4 gx-0 text-center">
+          <div class="col-12 text-center text-color-secondary">
+            <h2 class="fs-1 mb-4 fw-bold">Choose event</h2>
+          </div>
+          <div class="col-6">
+            <img src="/assets//images//events-page/activity-1.png" class="img-fluid" alt="activity-1">
+          </div>
+          <div class="col-6">
+            <img src="/assets//images//events-page/activity-2.png" class="img-fluid" alt="activity-2">
+          </div>
+          <div class="col-6">
+            <img src="/assets//images//events-page/activity-3.png" class="img-fluid" alt="activity-3">
+          </div>
+          <div class="col-6">
+            <img src="/assets//images//events-page/activity-4.png" class="img-fluid" alt="activity-4">
+          </div>
+          <div class="col-6">
+            <img src="/assets//images//events-page/activity-5.png" class="img-fluid" alt="activity-5">
+          </div>
+          <div class="col-6">
+            <img src="/assets//images//events-page/activity-6.png" class="img-fluid" alt="activity-6">
+          </div>
+          <div class="col-12 text-center fs-2 text-color-quaternary fw-medium mt-3">
+            <p class="mb-0">Couldn't find the event you had in mind?</p>
+          </div>
+          <div class="col-12 text-center fs-3 text-color-secondary fw-bold">
+            <p class="mb-0">No problem!</p>
+          </div>
+          <div class="col-12 text-center fs-6 text-color-primary fw-medium">
+            <p>Create your own unforgettable experience!</p>
+          </div>
+          <div class="col-12 text-center">
+            <a href="/pages/create-event.html" class="btn btn-primary-custom px-4 py-2 fw-medium">Create Event</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer section -->
-    <footer class="angle-effect bg-quaternary-dark">
+    <footer class="angle-effect bg-quaternary-dark ">
       <div class="container">
         <div class="row footer-row align-items-center">
           <!-- left column -->
           <div class="col-8 px-3">
-            <span class="text-light fw-bold"
+            <span class="text-light fw-medium"
               ><i class="bi bi-c-circle"></i> LinkUp | Anesis Dev Team</span
             >
           </div>
