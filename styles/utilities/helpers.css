@@ -40,6 +40,8 @@
 .angle-effect-top-bottom {
   clip-path: var(--clip-path-angle-top-bottom);
 
+  padding-top: var(--clip-path-distance-padding);
+
   padding-bottom: var(--clip-path-distance-padding);
 }
 
