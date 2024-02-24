@@ -1,0 +1,5 @@
+/* Custom class to adjust the width & height of the card */
+.card-dimensions {
+  width: 240px;
+  height: 280px;
+}
