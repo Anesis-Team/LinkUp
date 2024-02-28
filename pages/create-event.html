@@ -38,9 +38,8 @@
     <!-- Vendor styles -->
     <link rel="stylesheet" href="/styles/vendors/bootstrap.css" />
 
-    <!-- TODO: Add component styles -->
     <!-- Component styles -->
-    <!-- <link rel="stylesheet" href="styles/components/" /> -->
+    <link rel="stylesheet" href="/styles/components/button.css" />
 
     <!-- Layout styles -->
     <link rel="stylesheet" href="/styles/layout/header.css" />
@@ -110,6 +109,90 @@
         </div>
       </div>
     </nav>
+
+    <section class="bg-quaternary-dark text-color-tertiary">
+      <div class="container">
+        <div class="row row-gap-2 text-center">
+
+          <!-- Back button -->
+          <div class="my-4 ps-4 text-start">
+            <a
+              class="btn btn-primary-custom p-0 px-2"
+              href="/pages/events.html"
+              ><i class="bi bi-arrow-left me-1"></i>Back</a
+            >
+          </div>
+
+          <!-- Form -->
+          <h1 class="fs-1">Create Event</h1>
+          <form action="" class="p-0">
+            <div class="col-12 d-flex flex-column my-3">
+              <label for="location" class="fs-4">Location</label>
+              <select
+                id="location"
+                name="location"
+                class="w-75 mx-auto rounded-5 mt-2 px-3 py-1 form-select"
+              >
+                <option value="Athens" selected>Athens</option>
+                <option value="Thessaloniki">Thessaloniki</option>
+                <option value="Corinth">Corinth</option>
+              </select>
+            </div>
+
+            <div class="col-12 d-flex flex-column my-3">
+              <label for="datetime" class="fs-4">Datetime</label>
+              <input
+                type="datetime-local"
+                id="datetime"
+                name="datetime"
+                class="w-75 mx-auto rounded-5 mt-2 px-3 py-1"
+              />
+            </div>
+
+            <div class="col-12 d-flex flex-column my-3">
+              <label for="participants-limit" class="fs-4"
+                >Participants Limit</label
+              >
+              <input
+                type="number"
+                id="participants-limit"
+                name="participants-limit"
+                class="w-75 mx-auto rounded-5 mt-2 px-3 py-1"
+              />
+            </div>
+
+            <div class="col-12 d-flex flex-column my-3">
+              <label for="description" class="fs-4">Description</label>
+              <textarea
+                name="description"
+                id="description"
+                rows="8"
+                class="w-75 mx-auto rounded-4 mt-2 px-3 py-1"
+              ></textarea>
+            </div>
+
+            <div class="col-12 d-flex flex-column my-3 mb-5 pb-3">
+              <label for="rules" class="fs-4">Rules</label>
+              <textarea
+                name="rules"
+                id="rules"
+                rows="8"
+                class="w-75 mx-auto rounded-4 mt-2 px-3 py-1"
+              ></textarea>
+            </div>
+
+            <!-- Create event button -->
+            <section class="angle-effect-top bg-tertiary-light">
+              <input
+                type="button"
+                value="Create Event"
+                class="btn btn-primary-custom px-4 py-2 my-5 fw-medium"
+              />
+            </section>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer section -->
     <footer class="angle-effect-top bg-quaternary-dark">
