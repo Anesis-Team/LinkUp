@@ -1,31 +1,27 @@
 :root {
-  --color-primary: #a61651; /* Custom primary color */
-  --color-secondary: #0e3d8b; /* Custom secondary color */
-  --color-tertiary: #fffffe; /* Custom tertiary color */
-  --color-quaternary: #001b2b; /* Custom quaternary color */
 
-  /* Define height for footer */
+  /* Colors */
+  --color-primary: #a61651; 
+  --color-secondary: #0e3d8b; 
+  --color-tertiary: #fffffe; 
+  --color-quaternary: #001b2b; 
+  
+  /* Layout */
   --footer-height: 150px;
 
-  /* Define a custom clip-path to create top angle effect */
+  /* Clip path angle effect */
   --clip-path-angle-top: polygon(0 0, 100% 40px, 100% 100%, 0% 100%);
-
-  /* Define a custom clip-path to create bottom angle effect */
   --clip-path-angle-bottom: polygon(
     0 0,
     100% 0px,
     100% 100%,
     0% calc(100% - 40px)
   );
-
-  /* Define a custom clip-path to create top & bottom angle effect */
   --clip-path-angle-top-bottom: polygon(
     0 0,
     100% 40px,
     100% 100%,
     0% calc(100% - 40px)
   );
-
-  /* Define distance padding after applying clip-path */
   --clip-path-distance-padding: 40px;
 }
