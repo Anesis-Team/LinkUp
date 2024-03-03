@@ -15,7 +15,6 @@
   color: var(--color-secondary);
 }
 
-
 .offcanvas-body .nav-link.active {
   color: var(--color-quaternary);
 }
