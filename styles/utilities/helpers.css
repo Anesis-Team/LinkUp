@@ -1,76 +1,55 @@
-/* Helper class to set background color to the primary custom color */
+/* Background colors */
 .bg-primary-custom {
   background-color: var(--color-primary);
 }
 
-/* Helper class to set background color to the secondary custom color */
 .bg-secondary-custom {
   background-color: var(--color-secondary);
 }
 
-/* Helper class to set background color to a light tertiary custom color */
 .bg-tertiary-light {
   background-color: var(--color-tertiary);
 }
 
-/* Helper class to set background color to a dark quaternary custom color */
 .bg-quaternary-dark {
   background-color: var(--color-quaternary);
 }
 
-/* Helper class to apply an angle effect using clip-path */
+/* Custom angle effect */
 .angle-effect-top {
   clip-path: var(--clip-path-angle-top);
-  /* Using a custom variable for the clip path */
-
   padding-top: var(--clip-path-distance-padding);
-  /* Adding padding to maintain space after applying clip-path */
 }
 
-/* Helper class to apply an angle effect using clip-path */
 .angle-effect-bottom {
-  clip-path: var(
-    --clip-path-angle-bottom
-  ); /* Using a custom variable for the clip path */
-
+  clip-path: var(--clip-path-angle-bottom);
   padding-bottom: var(--clip-path-distance-padding);
 }
 
-/* Helper class to apply an angle effect using clip-path */
 .angle-effect-top-bottom {
   clip-path: var(--clip-path-angle-top-bottom);
-
   padding-top: var(--clip-path-distance-padding);
-
   padding-bottom: var(--clip-path-distance-padding);
 }
 
-/* Helper class to set text color to the primary custom color */
+/* Text colors */
 .text-color-primary {
   color: var(--color-primary);
 }
 
-/* Helper class to set text color to the secondary custom color */
 .text-color-secondary {
   color: var(--color-secondary);
 }
 
-/* Helper class to set text color to the tertiary custom color */
 .text-color-tertiary {
   color: var(--color-tertiary);
 }
 
-/* Helper class to set text color to the quaternary custom color */
 .text-color-quaternary {
   color: var(--color-quaternary);
 }
 
-/* TODO: Decide which box shadow is better during refactoring */
-/* Helper class for box shadows */
+/* Box shadows */
 .box-shadow-md {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.box-shadow-lg {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }

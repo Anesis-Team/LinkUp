@@ -52,12 +52,14 @@
     <!-- Navbar section -->
     <nav class="navbar bg-tertiary-light sticky-top px-2">
       <div class="container-fluid">
+
         <!-- Brand name -->
         <a
           class="navbar-brand text-color-secondary fs-2 fw-semibold"
           href="/index.html"
           >LinkUp</a
         >
+
         <!-- Burger menu -->
         <button
           class="navbar-toggler"
@@ -110,88 +112,89 @@
       </div>
     </nav>
 
-    <section class="bg-quaternary-dark text-color-tertiary">
+    <!-- Create event section -->
+    <section class="text-color-tertiary">
       <div class="container">
-        <div class="row row-gap-2 text-center">
-          <!-- TODO: add column -->
-          <!-- BUG: Needs column to function properly -->
-
-          <!-- Back button -->
-          <div class="my-4 ps-4 text-start">
-            <a
-              class="btn btn-primary-custom p-0 px-2"
-              href="/pages/events.html"
-              ><i class="bi bi-arrow-left me-1"></i>Back</a
-            >
+        <div class="row text-center bg-quaternary-dark">
+          <div class="col-12">
+            <div class="my-4 ps-2 text-start">
+              
+              <!-- Back button -->
+              <a
+                class="btn btn-primary-custom p-0 px-2"
+                href="/pages/events.html"
+                ><i class="bi bi-arrow-left me-1"></i>Back</a
+              >
+            </div>
           </div>
+          <div class="col-12 mb-0">
+            <h1 class="fs-2">Create Event</h1>
+          </div>
+          <div class="col-12 px-0">
 
-          <!-- Form -->
-          <h1 class="fs-1">Create Event</h1>
-          <form action="" class="p-0">
-            <div class="col-12 d-flex flex-column my-3">
-              <label for="location" class="fs-4">Location</label>
-              <select
-                id="location"
-                name="location"
-                class="w-75 mx-auto rounded-5 mt-2 px-3 py-1 form-select"
-              >
-                <option value="Athens" selected>Athens</option>
-                <option value="Thessaloniki">Thessaloniki</option>
-                <option value="Corinth">Corinth</option>
-              </select>
-            </div>
+            <!-- Form -->
+            <form action="" class="p-0">
+              <div class="d-flex flex-column my-3">
+                <label for="location" class="fs-4">Location</label>
+                <select
+                  id="location"
+                  name="location"
+                  class="w-75 mx-auto rounded-5 mt-2 px-3 py-1 form-select"
+                >
+                  <option value="Athens" selected>Athens</option>
+                  <option value="Thessaloniki">Thessaloniki</option>
+                  <option value="Corinth">Corinth</option>
+                </select>
+              </div>
+              <div class="d-flex flex-column my-3">
+                <label for="datetime" class="fs-4">Datetime</label>
+                <input
+                  type="datetime-local"
+                  id="datetime"
+                  name="datetime"
+                  class="w-75 mx-auto rounded-5 mt-2 px-3 py-1"
+                />
+              </div>
+              <div class="d-flex flex-column my-3">
+                <label for="participants-limit" class="fs-4"
+                  >Participants Limit</label
+                >
+                <input
+                  type="number"
+                  id="participants-limit"
+                  name="participants-limit"
+                  class="w-75 mx-auto rounded-5 mt-2 px-3 py-1"
+                />
+              </div>
+              <div class="d-flex flex-column my-3">
+                <label for="description" class="fs-4">Description</label>
+                <textarea
+                  name="description"
+                  id="description"
+                  rows="8"
+                  class="w-75 mx-auto rounded-4 mt-2 px-3 py-1"
+                ></textarea>
+              </div>
+              <div class="d-flex flex-column my-3 mb-5 pb-3">
+                <label for="rules" class="fs-4">Rules</label>
+                <textarea
+                  name="rules"
+                  id="rules"
+                  rows="8"
+                  class="w-75 mx-auto rounded-4 mt-2 px-3 py-1"
+                ></textarea>
+              </div>
 
-            <div class="col-12 d-flex flex-column my-3">
-              <label for="datetime" class="fs-4">Datetime</label>
-              <input
-                type="datetime-local"
-                id="datetime"
-                name="datetime"
-                class="w-75 mx-auto rounded-5 mt-2 px-3 py-1"
-              />
-            </div>
-
-            <div class="col-12 d-flex flex-column my-3">
-              <label for="participants-limit" class="fs-4"
-                >Participants Limit</label
-              >
-              <input
-                type="number"
-                id="participants-limit"
-                name="participants-limit"
-                class="w-75 mx-auto rounded-5 mt-2 px-3 py-1"
-              />
-            </div>
-
-            <div class="col-12 d-flex flex-column my-3">
-              <label for="description" class="fs-4">Description</label>
-              <textarea
-                name="description"
-                id="description"
-                rows="8"
-                class="w-75 mx-auto rounded-4 mt-2 px-3 py-1"
-              ></textarea>
-            </div>
-
-            <div class="col-12 d-flex flex-column my-3 mb-5 pb-3">
-              <label for="rules" class="fs-4">Rules</label>
-              <textarea
-                name="rules"
-                id="rules"
-                rows="8"
-                class="w-75 mx-auto rounded-4 mt-2 px-3 py-1"
-              ></textarea>
-            </div>
-
-            <!-- Create event button -->
-            <section class="angle-effect-top bg-tertiary-light">
-              <input
-                type="button"
-                value="Create Event"
-                class="btn btn-primary-custom px-4 py-2 my-5 fw-medium"
-              />
-            </section>
-          </form>
+              <!-- Create event button -->
+              <div class="angle-effect-top bg-tertiary-light">
+                <input
+                  type="button"
+                  value="Create Event"
+                  class="btn btn-primary-custom px-4 py-2 my-5 fw-medium"
+                />
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -200,9 +203,10 @@
     <footer class="angle-effect-top bg-quaternary-dark">
       <div class="container">
         <div class="row footer-row align-items-center">
+
           <!-- left column -->
           <div class="col-8 px-3">
-            <span class="text-light fw-bold"
+            <span class="text-light fw-bold font-size-sm"
               ><i class="bi bi-c-circle"></i> LinkUp | Anesis Dev Team</span
             >
           </div>
@@ -212,13 +216,13 @@
             class="col-4 d-flex justify-content-end align-items-center gap-4 px-3"
           >
             <a href="https://www.facebook.com/"
-              ><i class="bi bi-facebook fs-3 text-light fw-bold"></i
+              ><i class="bi bi-facebook fs-5 text-light fw-bold"></i
             ></a>
             <a href="https://www.instagram.com/"
-              ><i class="bi bi-instagram fs-3 text-light fw-bold"></i
+              ><i class="bi bi-instagram fs-5 text-light fw-bold"></i
             ></a>
             <a href="https://twitter.com/"
-              ><i class="bi bi-twitter-x fs-3 text-light fw-bold"></i
+              ><i class="bi bi-twitter-x fs-5 text-light fw-bold"></i
             ></a>
           </div>
         </div>

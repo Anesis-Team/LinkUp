@@ -1,33 +1,25 @@
 /* navbar */
-
-/* Offcanvas navbar component class selector to change the color of the brand to quaternary custom color */
 .navbar-brand:hover {
   color: var(--color-quaternary);
 }
 
-/* Offcanvas navbar component class to replace the toggler icon with one in secondary custom color */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%230e3d8b' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* Offcanvas navbar component class selector to remove the border of the toggler icon */
 .navbar-toggler {
   border: none;
 }
 
-/* Offcanvas navbar component classes selector to change the color of inactive links to secondary custom color*/
 .offcanvas-body .nav-link {
   color: var(--color-secondary);
 }
 
-/* Offcanvas navbar component classes selector to change the color of the active link to quaternary custom color*/
 .offcanvas-body .nav-link.active {
   color: var(--color-quaternary);
 }
 
 /* carousel*/
-
-/* Carousel component class to change "previous" arrow icon */
 .carousel-control-prev-icon {
   background: url('/assets/images/home-page/left-arrow.png');
   width: 32px;
@@ -36,7 +28,6 @@
   background-repeat: no-repeat;
 }
 
-/* Carousel component class to change "next" arrow icon */
 .carousel-control-next-icon {
   background: url('/assets/images/home-page/right-arrow.png');
   width: 32px;
