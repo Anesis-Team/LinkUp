@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkUp | Create event</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@400;500&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Utilities styles -->
+    <link rel="stylesheet" href="/styles/utilities/variables.css" />
+    <link rel="stylesheet" href="/styles/utilities/helpers.css" />
+
+    <!-- Base styles -->
+    <link rel="stylesheet" href="/styles/base/reset.css" />
+    <link rel="stylesheet" href="/styles/base/typography.css" />
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="/styles/vendors/bootstrap.css" />
+
+    <!-- Component styles -->
+    <link rel="stylesheet" href="/styles/components/button.css" />
+
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="/styles/layout/header.css" />
+    <link rel="stylesheet" href="/styles/layout/footer.css" />
+
+    <!-- Page specific styles -->
+    <link rel="stylesheet" href="/styles/pages/create-event.css" />
+  </head>
+  <body>
+    <!-- Navbar section -->
+    <nav class="navbar bg-tertiary-light sticky-top px-2">
+      <div class="container-fluid">
+
+        <!-- Brand name -->
+        <a
+          class="navbar-brand text-color-secondary fs-2 fw-semibold"
+          href="/index.html"
+          >LinkUp</a
+        >
+
+        <!-- Burger menu -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5
+              class="offcanvas-title text-color-secondary fw-semibold"
+              id="offcanvasNavbarLabel"
+            >
+              LinkUp
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/pages/create-event.html"
+                  >Create Event</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Create event section -->
+    <section class="text-color-tertiary">
+      <div class="container">
+        <div class="row text-center bg-quaternary-dark">
+          <div class="col-12">
+            <div class="my-4 ps-2 text-start">
+              
+              <!-- Back button -->
+              <a
+                class="btn btn-primary-custom p-0 px-2"
+                href="/pages/events.html"
+                ><i class="bi bi-arrow-left me-1"></i>Back</a
+              >
+            </div>
+          </div>
+          <div class="col-12 mb-0">
+            <h1 class="fs-2">Create Event</h1>
+          </div>
+          <div class="col-12 px-0">
+
+            <!-- Form -->
+            <form action="" class="p-0">
+              <div class="d-flex flex-column my-3">
+                <label for="location" class="fs-4">Location</label>
+                <select
+                  id="location"
+                  name="location"
+                  class="w-75 mx-auto rounded-5 mt-2 px-3 py-1 form-select"
+                >
+                  <option value="Athens" selected>Athens</option>
+                  <option value="Thessaloniki">Thessaloniki</option>
+                  <option value="Corinth">Corinth</option>
+                </select>
+              </div>
+              <div class="d-flex flex-column my-3">
+                <label for="datetime" class="fs-4">Datetime</label>
+                <input
+                  type="datetime-local"
+                  id="datetime"
+                  name="datetime"
+                  class="w-75 mx-auto rounded-5 mt-2 px-3 py-1"
+                />
+              </div>
+              <div class="d-flex flex-column my-3">
+                <label for="participants-limit" class="fs-4"
+                  >Participants Limit</label
+                >
+                <input
+                  type="number"
+                  id="participants-limit"
+                  name="participants-limit"
+                  class="w-75 mx-auto rounded-5 mt-2 px-3 py-1"
+                />
+              </div>
+              <div class="d-flex flex-column my-3">
+                <label for="description" class="fs-4">Description</label>
+                <textarea
+                  name="description"
+                  id="description"
+                  rows="8"
+                  class="w-75 mx-auto rounded-4 mt-2 px-3 py-1"
+                ></textarea>
+              </div>
+              <div class="d-flex flex-column my-3 mb-5 pb-3">
+                <label for="rules" class="fs-4">Rules</label>
+                <textarea
+                  name="rules"
+                  id="rules"
+                  rows="8"
+                  class="w-75 mx-auto rounded-4 mt-2 px-3 py-1"
+                ></textarea>
+              </div>
+
+              <!-- Create event button -->
+              <div class="angle-effect-top bg-tertiary-light">
+                <input
+                  type="button"
+                  value="Create Event"
+                  class="btn btn-primary-custom px-4 py-2 my-5 fw-medium"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="angle-effect-top bg-quaternary-dark">
+      <div class="container">
+        <div class="row footer-row align-items-center">
+
+          <!-- left column -->
+          <div class="col-8 px-3">
+            <span class="text-light fw-bold font-size-sm"
+              ><i class="bi bi-c-circle"></i> LinkUp | Anesis Dev Team</span
+            >
+          </div>
+
+          <!-- right column -->
+          <div
+            class="col-4 d-flex justify-content-end align-items-center gap-4 px-3"
+          >
+            <a href="https://www.facebook.com/"
+              ><i class="bi bi-facebook fs-5 text-light fw-bold"></i
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><i class="bi bi-instagram fs-5 text-light fw-bold"></i
+            ></a>
+            <a href="https://twitter.com/"
+              ><i class="bi bi-twitter-x fs-5 text-light fw-bold"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+:root {
+
+  /* Colors */
+  --color-primary: #a61651; 
+  --color-secondary: #0e3d8b; 
+  --color-tertiary: #fffffe; 
+  --color-quaternary: #001b2b; 
+  
+  /* Layout */
+  --footer-height: 150px;
+
+  /* Clip path angle effect */
+  --clip-path-angle-top: polygon(0 0, 100% 40px, 100% 100%, 0% 100%);
+  --clip-path-angle-bottom: polygon(
+    0 0,
+    100% 0px,
+    100% 100%,
+    0% calc(100% - 40px)
+  );
+  --clip-path-angle-top-bottom: polygon(
+    0 0,
+    100% 40px,
+    100% 100%,
+    0% calc(100% - 40px)
+  );
+  --clip-path-distance-padding: 40px;
+}

@@ -1,0 +1,55 @@
+/* Background colors */
+.bg-primary-custom {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary-custom {
+  background-color: var(--color-secondary);
+}
+
+.bg-tertiary-light {
+  background-color: var(--color-tertiary);
+}
+
+.bg-quaternary-dark {
+  background-color: var(--color-quaternary);
+}
+
+/* Custom angle effect */
+.angle-effect-top {
+  clip-path: var(--clip-path-angle-top);
+  padding-top: var(--clip-path-distance-padding);
+}
+
+.angle-effect-bottom {
+  clip-path: var(--clip-path-angle-bottom);
+  padding-bottom: var(--clip-path-distance-padding);
+}
+
+.angle-effect-top-bottom {
+  clip-path: var(--clip-path-angle-top-bottom);
+  padding-top: var(--clip-path-distance-padding);
+  padding-bottom: var(--clip-path-distance-padding);
+}
+
+/* Text colors */
+.text-color-primary {
+  color: var(--color-primary);
+}
+
+.text-color-secondary {
+  color: var(--color-secondary);
+}
+
+.text-color-tertiary {
+  color: var(--color-tertiary);
+}
+
+.text-color-quaternary {
+  color: var(--color-quaternary);
+}
+
+/* Box shadows */
+.box-shadow-md {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
